@@ -4,11 +4,13 @@ var config = {
     texts: [
         "Chúc Mừng Sinh Nhật",
         "Mai",
-        "Nhé~~",
+        "Bất chợt nhớ… mai là sinh nhật ai đó kkk.",
+        "Ai bảo thêm tuổi là già không nhỉ? Ngốc quá! Thêm tuổi là thêm nhiều yêu thương, hạnh phúc.",
+        "Chúc Mai luôn vui vẻ xinh đẹp vạn sự như mơ triệu sự bất ngờ ngập tràn may mắn nha !!! Chúc Mai 8386 mãi đỉnh mãi đỉnh 🤣🤣🤣"
     ],
 
     imgs: {
-        "mai": "./imgs/mai_1.jpg",
+        "Mai": "./imgs/mai_1.jpg",
     },
 
     desc: {
