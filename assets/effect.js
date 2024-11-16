@@ -37,7 +37,7 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
@@ -59,7 +59,7 @@ $('document').ready(function(){
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -148,6 +148,10 @@ $('document').ready(function(){
 	// });
 
 	$('#light_candle').click(function(){
+		var audioIntro = $('.song')[0];
+		audioIntro.pause();
+		var audio = $('.song-birthday')[0];
+		audio.play();
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
@@ -175,7 +179,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:240, left: vw+250},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
@@ -189,12 +193,12 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(2000).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(3000).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
+					$('.gift').css('opacity', 1).addClass('animate').fadeIn('fast');
 				});
 				
 			}

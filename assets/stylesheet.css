@@ -1323,6 +1323,36 @@ audio {
 }
 
 .gift {
-	background-image: url(https://hbd-card.netlify.app/gift.8fae589d.svg)
+	height: 17rem;
+	width: 17rem;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: heart-beat 2s linear infinite alternate;
+	position: absolute;
+	top: 136px;
+	left: 45%;
+	overflow: hidden;
 }
 
+@keyframes heart-beat {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animate {
+	animation: heart-beat 2s linear infinite alternate;
+}
+
+.gift {
+	-webkit-animation: heart-beat 2s linear infinite alternate;
+	-moz-animation: heart-beat 2s linear infinite alternate;
+	animation: heart-beat 2s linear infinite alternate;
+}
