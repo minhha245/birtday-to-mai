@@ -17,6 +17,11 @@ $('document').ready(function(){
 		});
 
 	$('#turn_on').click(function(){
+		hideEverything();
+		$('.main-1').css('margin-top', '0');
+		$('.counter').show();
+		runAnimation();
+
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
