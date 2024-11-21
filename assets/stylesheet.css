@@ -1329,9 +1329,9 @@ audio {
 	background-repeat: no-repeat;
 	background-size: contain;
 	animation: heart-beat 2s linear infinite alternate;
-	position: absolute;
-	top: 136px;
-	left: 45%;
+	/*position: absolute;*/
+	/*top: 136px;*/
+	/*left: 45%;*/
 	overflow: hidden;
 }
 
