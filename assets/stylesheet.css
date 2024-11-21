@@ -1265,10 +1265,10 @@ audio {
 }
 
 .cake-cover {
-	margin-top: 50px;
+	margin-top: 55px;
 }
 .message {
-	margin-top: 150px;
+	margin-top: 145px;
 	display: none;
 }
 .message p {
@@ -1355,4 +1355,16 @@ audio {
 	-webkit-animation: heart-beat 2s linear infinite alternate;
 	-moz-animation: heart-beat 2s linear infinite alternate;
 	animation: heart-beat 2s linear infinite alternate;
+}
+
+@keyframes shake {
+	0% { transform: translateX(0); }
+	25% { transform: translateX(-5px); }
+	50% { transform: translateX(5px); }
+	75% { transform: translateX(-5px); }
+	100% { transform: translateX(0); }
+}
+
+.shake {
+	animation: shake 0.5s ease-in-out; /* Thời gian hiệu ứng */
 }

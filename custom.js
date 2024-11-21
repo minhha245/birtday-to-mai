@@ -24,3 +24,15 @@ $(function () {
     }
 });
 
+
+$(document).ready(function () {
+    $("#gift-img").on("click", function () {
+        const $img = $(this);
+
+        $img.addClass("shake");
+
+        $img.on("animationend", function () {
+            $img.removeClass("shake");
+        });
+    });
+});
