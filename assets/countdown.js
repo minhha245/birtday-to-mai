@@ -48,8 +48,6 @@ x = setInterval(function() {
 
         hw = w / 2;
         hh = h / 2;
-
-        ctx.font = opts.charSize + 'px Verdana';
     });
 
     if (distance > 0) {
